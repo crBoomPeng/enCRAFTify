@@ -1,0 +1,33 @@
+### ============================
+### enCRAFTify – Deutsche Übersetzung
+### ============================
+
+### --- Research ---
+DisplayName_enC_Research_EngineParts = "Forschung: Motorteile"
+Tooltip_enC_Research_EngineParts = "Ermöglicht die Herstellung präziser Motorkomponenten."
+
+### --- Maschinen / Entities ---
+DisplayName_ES_MetalLathe = "Metall-Drehbank"
+DisplayName_ES_DrillPress = "Ständerbohrmaschine"
+
+### --- Rezepte: Milling Machine ---
+DisplayName_enC_MillingMachine_EngineParts = "Motorteile fräsen"
+Tooltip_enC_MillingMachine_EngineParts = "Stellt präzise Motorkomponenten aus Stahl her."
+
+### --- Rezepte: Drill Press ---
+DisplayName_enC_DrillPress_AssembleVise = "Schraubstock montieren"
+Tooltip_enC_DrillPress_AssembleVise = "Montiert einen einfachen Schraubstock aus gegossenen Teilen."
+
+### --- Rezepte: Vise Casting ---
+DisplayName_enC_PressViseMold = "Schraubstockform pressen"
+Tooltip_enC_PressViseMold = "Formt eine Tonform für Schraubstockteile."
+
+DisplayName_enC_FireClayViseMold = "Schraubstockform brennen"
+Tooltip_enC_FireClayViseMold = "Brennt die Tonform im Ofen, um sie zu härten."
+
+DisplayName_enC_CastVise = "Schraubstockteile gießen"
+Tooltip_enC_CastVise = "Gießt rohe Schraubstockteile aus geschmolzenem Metall."
+
+### --- Items ---
+DisplayName_Base_EngineParts = "Motorteile"
+Tooltip_Base_EngineParts = "Präzise gefertigte Komponenten für Maschinen und Motoren."

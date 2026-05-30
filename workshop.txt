@@ -1,0 +1,4 @@
+﻿title= enCRAFTify
+description= Adds drill press, metal lathe and advanced recipes.
+tags= Crafting;Items;Gameplay
+visibility= public

@@ -1,0 +1,22 @@
+module Base
+{	
+    xuiSkin default
+    {
+        entity ES_MetalLathe
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Metal Lathe,
+            Icon = Item_Hacksaw,
+        }
+    }
+
+    xuiSkin default
+    {
+        entity ES_DrillPress
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Drill Press,
+            Icon = Item_Hacksaw,
+        }
+    }
+}

@@ -1,0 +1,151 @@
+module enCRAFTify
+{
+    craftRecipe enC_PressViseMold
+    {
+        time = 100,
+        category = Pottery,
+        xpAward = Pottery:10,
+        Tags = HandPress,
+        inputs
+        {
+            item 5 [Base.Clay],
+            item 1 [Base.WoodenCrudeBenchVisePartsMold] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.ClayCrudeBenchVisePartsMoldUnfired,
+        }
+    }
+
+    craftRecipe enC_FireClayViseMold
+    {
+        time = 20,
+        timedAction = Making_With_Kiln,
+        category = Pottery,
+        Tags = KilnLarge,
+        inputs
+        {
+            item 1 [Base.ClayCrudeBenchVisePartsMoldUnfired],
+            item 1 tags[base:startfire],
+            item 1 tags[base:log;base:charcoal],
+        }
+        outputs
+        {
+            item 1 Base.ClayCrudeBenchVisePartsMold,
+        }
+    }
+
+    craftRecipe enC_CastVise
+    {
+        time = 200,
+        Tags = Furnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 tags[base:tongs] mode:keep flags[MayDegradeLight],
+            item 1 [Base.ClayCrudeBenchVisePartsMold],
+            item 5 tags[base:charcoal],
+            item 15 [Base.CeramicCrucible_Iron;Base.CeramicCrucibleSmall_Iron],
+        }
+        outputs
+        {
+            item 1 Base.CrudeBenchViseParts,
+        }
+    }
+
+    craftRecipe enC_DrillPress_AssembleVise
+    {
+        time = 100,
+        SkillRequired = Blacksmith:4;Mechanics:2,
+        NeedToBeLearn = false,
+        timedAction = SawSmallItemMetal,
+        Tags = DrillPress,
+        category = Repair,
+        inputs
+        {
+            item 1 [Base.Wrench] mode:keep,
+            item 1 tags[base:Screwdriver] mode:keep,
+            item 1 [Base.CrudeBenchViseParts],
+            item 1 [Base.MetalBar],
+            item 1 [Base.NutsBolts],
+            item 1 [Base.SteelBarHalf],
+
+        }
+        outputs
+        {
+            item 1 Base.CrudeBenchVise,
+        }
+    }
+    
+    craftRecipe enC_LatheMachine_EngineParts
+    {
+        time = 150,
+        SkillRequired = Blacksmith:9;Mechanics:8;MetalWelding:2,
+        NeedToBeLearn = false,
+        timedAction = SawSmallItemMetal,
+        xpAward = Blacksmith:15;Mechanics:6,
+        Tags = LatheMachine,
+        category = Repair,
+        inputs
+        {
+			item 1 [Base.CrudeBenchVise] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[base:Screwdriver] mode:keep,
+            item 1 [Base.PiercedSteelBlock],
+            item 2 [Base.MetalBar],
+            item 1 [Base.PiercedIronChunk],
+            item 1 [Base.SteelBarQuarter],
+            item 1 [Base.NutsBolts],
+        }
+        outputs
+        {
+            item 3 Base.EngineParts,
+        }
+    }
+	
+    craftRecipe enC_DrawWire
+    {
+        time = 150,
+        SkillRequired = Blacksmith:4;MetalWelding:2,
+        NeedToBeLearn = false,
+        timedAction = SawSmallItemMetal,
+        xpAward = Blacksmith:5;MetalWelding:2,
+        Tags = LatheMachine,
+        category = MetalWelding,
+        inputs
+        {
+			item 1 [Base.CrudeBenchVise] mode:keep,
+			item 1 [Base.DrawPlate] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[base:pliers] mode:keep,
+            item 1 [Base.SteelBar],
+
+        }
+        outputs
+        {
+            item 1 Base.Wire,
+        }
+    }
+	
+    craftRecipe enC_NutsAndBolts
+    {
+        time = 150,
+        SkillRequired = Blacksmith:4;Mechanics:3,
+        NeedToBeLearn = false,
+        timedAction = SawSmallItemMetal,
+        xpAward = Blacksmith:5;Mechanics:2,
+        Tags = LatheMachine,
+        category = MetalWelding,
+        inputs
+        {
+			item 1 [Base.CrudeBenchVise] mode:keep,
+            item 1 tags[base:MetalworkingChisel] mode:keep,
+            item 1 tags[base:wrench] mode:keep,
+            item 1 [Base.SteelBarHalf],
+            item 1 [Base.PiercedSteelChunk],
+        }
+        outputs
+        {
+            item 1 Base.NutsBolts,
+        }
+    }
+}
+

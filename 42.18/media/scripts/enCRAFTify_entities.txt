@@ -1,0 +1,195 @@
+module enCRAFTify
+{	
+    entity Industry_DrillPress
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_DrillPress,
+            uiEnabled = true,
+        }
+        component CraftBench
+        {
+            Recipes = DrillPress;StandingDrillPress,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildLowHammer,
+            time = 7600,
+            category = ramble,
+            inputs
+            {
+                item 15 [Base.SheetMetal],
+                item 20 [Base.Nails],
+                item 2 [Base.Plank],
+                item 20 [Base.SteelBar],
+                item 20 [Base.NutsBolts],
+                item 20 [Base.PiercedSteelBlock],
+                item 20 [Base.PiercedSteelChunk],
+            }
+        }
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = industry_02_269,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = industry_02_268,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = industry_02_270,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = industry_02_271,
+                }
+            }
+        }
+    }
+
+    entity Industry_Lathe
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_MetalLathe,
+            uiEnabled = true,
+        }
+        component CraftBench
+        {
+            Recipes = LatheMachine,
+            requiresElectricity = true,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildLowHammer,
+            time = 10800,
+            category = ramble,
+            inputs
+            {
+                item 15 [Base.SheetMetal],
+                item 20 [Base.Nails],
+                item 2 [Base.Plank],
+                item 20 [Base.SteelBar],
+                item 20 [Base.NutsBolts],
+                item 20 [Base.PiercedSteelBlock],
+                item 20 [Base.PiercedSteelChunk],
+            }
+        }
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = industry_03_3 industry_03_4 industry_03_5,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = industry_03_2,
+                    row = industry_03_1,
+                    row = industry_03_0,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = industry_03_8 industry_03_9 industry_03_10,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = industry_03_13,
+                    row = industry_03_12,
+                    row = industry_03_11,
+                }
+            }
+        }
+    }
+	
+    entity Industry_Lathe_2
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_MetalLathe,
+            uiEnabled = true,
+        }
+        component CraftBench
+        {
+            Recipes = LatheMachine,
+            requiresElectricity = true,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildLowHammer,
+            time = 10800,
+            category = ramble,
+            inputs
+            {
+                item 15 [Base.SheetMetal],
+                item 20 [Base.Nails],
+                item 2 [Base.Plank],
+                item 20 [Base.SteelBar],
+                item 20 [Base.NutsBolts],
+                item 20 [Base.PiercedSteelBlock],
+                item 20 [Base.PiercedSteelChunk],
+            }
+        }
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = industry_03_35 industry_03_36 industry_03_37,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = industry_03_34,
+                    row = industry_03_33,
+                    row = industry_03_32,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = industry_03_40 industry_03_41 industry_03_42,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = industry_03_45,
+                    row = industry_03_44,
+                    row = industry_03_43,
+                }
+            }
+        }
+    }
+}

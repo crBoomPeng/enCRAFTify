@@ -1,0 +1,5 @@
+DisplayName_enC_MillingMachine_EngineParts = "Engine Parts"
+Tooltip_enC_MillingMachine_EngineParts = "Precision‑machined components for advanced machinery."
+
+DisplayName_enC_DrillPress_AssembleVise = "Assemble Vise"
+Tooltip_enC_DrillPress_AssembleVise = "Assemble a crude vise using the drill press."

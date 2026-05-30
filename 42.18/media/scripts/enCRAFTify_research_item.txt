@@ -1,0 +1,14 @@
+module enCRAFTify
+{
+    research enC_Research_EngineParts
+    {
+        Tag = "Research:EngineerParts",
+
+        xpAward = Mechanics:1,
+
+        UnlocksRecipes =
+        {
+            enC_LatheMachine_EngineParts,
+        }
+    }
+}
